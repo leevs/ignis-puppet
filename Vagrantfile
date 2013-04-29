@@ -36,7 +36,7 @@ Vagrant::Config.run do |config|
        web_config.vm.box = "MyCentOS2"
        web_config.ssh.max_tries = 100
        web_config.vm.network("192.168.56.155")
-       web_config.vm.host_name = "web"
+       web_config.vm.host_name = "web.biocom.net"
      # web_config.vm.forward_port "mysql" ,3306, 3307
        web_config.vm.provision :puppet do |web_puppet|
        web_puppet.pp_path = "/tmp/vagrant-puppet"
