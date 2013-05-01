@@ -1,0 +1,6 @@
+127.0.0.1			localhost.localdomain 		localhost
+::1					localhost6.localdomain6 	localhost6
+192.168.56.101		puppetmaster.biocom.net		puppet
+192.168.56.104		test01.biocom.net			test01
+192.168.56.150		web.biocom.net				web
+192.168.56.155		db.biocom.net				db

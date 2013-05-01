@@ -36,6 +36,11 @@
 # Copyright 2013 Your name here, unless otherwise noted.
 #
 class hosts {
-
-
+	file {'/etc/hosts':
+		ensure => file,
+		source => 'puppet:///modules/hosts/hosts',
+		mode =>	'0644',
+		owner => 'root',
+		group => 'root',
+	}
 }
