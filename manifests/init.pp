@@ -23,3 +23,11 @@ class puppet {
     hour => '*',
   }
 }
+
+class hosts {
+    file { '/etc/hosts':
+      ensure => file,
+      source => 'puppet:///files/hosts'
+      owner => 'root'
+    }
+}
