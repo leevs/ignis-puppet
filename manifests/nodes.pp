@@ -1,7 +1,3 @@
-node 'web.biocom.net' {
+node 'puppetmaster.biocom.net' {
   include puppet
-  include hosts
-  file { 'tmp/hello': 
-    content => "Hello World\n",
-  }
 }
